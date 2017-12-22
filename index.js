@@ -19,10 +19,10 @@ class Route {
   }
 
     blocksTravelled() {
-            return eastWest.indexOf(this.endingLocation['horizontal']) - eastWest.indexOf(this.beginningLocation['horizontal'])
+      let horizontal =  eastWest.indexOf(this.endingLocation['horizontal']) - eastWest.indexOf(this.beginningLocation['horizontal'])
 
-      return this.endingLocation["vertical"] - this.beginningLocation['vertical']
+      let vertical =  this.endingLocation["vertical"] - this.beginningLocation['vertical']
 
-
+      return vertical + horizontal
     }
 }
