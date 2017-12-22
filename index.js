@@ -1,15 +1,3 @@
-class Driver {
-  constructor(name, start) {
-    this.name = name
-    this.start = start
-    this.startDate = new Date(start)
-  }
-
-  yearsExperienceFromBeginningOf(endDate) {
-    return endDate - this.startDate.getFullYear()
-  }
-}
-
 class Route {
   let eastWest = ['1st Avenue', '2nd Avenue', '3rd Avenue', 'Lexington Avenue', 'Park', 'Madison Avenue', '5th Avenue']
 
@@ -20,5 +8,17 @@ class Route {
 
   blocksTravelled() {
     
+  }
+}
+
+class Driver {
+  constructor(name, start) {
+    this.name = name
+    this.start = start
+    this.startDate = new Date(start)
+  }
+
+  yearsExperienceFromBeginningOf(endDate) {
+    return endDate - this.startDate.getFullYear()
   }
 }
