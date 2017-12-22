@@ -1,14 +1,4 @@
-class Route {
 
-  constructor(beginningLocation, endingLocation) {
-    this.beginningLocation = beginningLocation
-    this.endingLocation = endingLocation
-  }
-  
-    blocksTravelled() {
-      
-    }
-}
 
 class Driver {
   constructor(name, start) {
@@ -20,4 +10,15 @@ class Driver {
   yearsExperienceFromBeginningOf(endDate) {
     return endDate - this.startDate.getFullYear()
   }
+}
+
+class Route {
+  constructor(beginningLocation, endingLocation) {
+    this.beginningLocation = beginningLocation
+    this.endingLocation = endingLocation
+  }
+  
+    blocksTravelled() {
+      
+    }
 }
