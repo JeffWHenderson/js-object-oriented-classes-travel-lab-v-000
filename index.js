@@ -18,10 +18,11 @@ class Route {
     this.endingLocation = endingLocation
   }
 
-    blocksTravelled() { // Use Math.abs() to get only positive values of distance
-      let horizontal =  Math.abs(eastWest.indexOf(this.endingLocation['horizontal']) - eastWest.indexOf(this.beginningLocation['horizontal']))
+    blocksTravelled() {
+                      // Use Math.abs() to get only positive values of distance
+      let horizontal =  eastWest.indexOf(this.endingLocation['horizontal']) - eastWest.indexOf(this.beginningLocation['horizontal'])
 
-      let vertical =  Math.abs(this.endingLocation["vertical"] - this.beginningLocation['vertical'])
+      let vertical =  this.endingLocation["vertical"] - this.beginningLocation['vertical']
 
       return vertical + horizontal
     }
