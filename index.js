@@ -21,6 +21,6 @@ class Route {
     blocksTravelled() {
       return this.endingLocation["vertical"] - this.beginningLocation['vertical']
 
-      console.log(eastWest.length)
+      console.log(eastWest.)
     }
 }
