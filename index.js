@@ -19,7 +19,7 @@ class Route {
   }
 
     blocksTravelled() {
-      return this.beginningLocation['horizontal']
-      this.beginningLocation['vertical'] - this.ending['vertical']
+      this.beginningLocation['horizontal']
+      return tthis.beginningLocation['vertical'] - this.ending['vertical']
     }
 }
