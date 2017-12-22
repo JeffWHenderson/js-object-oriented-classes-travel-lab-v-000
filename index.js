@@ -4,6 +4,6 @@ class Driver {
     this.start = start
   }
   startDate() {
-    
+    return this.start
   }
 }
