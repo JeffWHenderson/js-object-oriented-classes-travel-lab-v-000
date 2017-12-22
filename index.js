@@ -19,12 +19,11 @@ class Route {
   }
 
     blocksTravelled() {
-                      // Use Math.abs() to get only positive values of distance
-      let horizontal =  eastWest.indexOf(this.endingLocation['horizontal']) - eastWest.indexOf(this.beginningLocation['horizontal'])
+      let horizontal =  eastWest.indexOf(this.endingLocation.horizontal) - eastWest.indexOf(this.beginningLocation['horizontal'])
 
       let vertical =  this.endingLocation["vertical"] - this.beginningLocation['vertical']
 
-      return Math.abs(vertical) + Math.abs(horizontal)
+      return Math.abs(vertical) + Math.abs(horizontal)  // Use Math.abs() to get only positive values of distance
     }
 
     estimatedTime(peak) {
