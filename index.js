@@ -21,6 +21,8 @@ class Route {
     blocksTravelled() {
       let horizontal =  eastWest.indexOf(this.endingLocation.horizontal) - eastWest.indexOf(this.beginningLocation.horizontal)
 
+      // dot notation above looks much cleaner than bracket notation below
+
       let vertical =  this.endingLocation["vertical"] - this.beginningLocation['vertical']
 
       return Math.abs(vertical) + Math.abs(horizontal)  // Use Math.abs() to get only positive values of distance
