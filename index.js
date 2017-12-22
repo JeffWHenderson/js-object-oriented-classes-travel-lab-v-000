@@ -25,4 +25,12 @@ class Route {
 
       return vertical + horizontal
     }
+
+    estimatedTime(peak) {
+      if(peak) {
+        blocksTravelled()
+      } else {
+        blocksTravelled() - 100
+      }
+    }
 }
