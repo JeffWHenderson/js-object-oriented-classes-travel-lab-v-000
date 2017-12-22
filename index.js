@@ -24,7 +24,7 @@ class Route {
 
       let vertical =  this.endingLocation["vertical"] - this.beginningLocation['vertical']
 
-      return vertical + horizontal
+      return Math.abs(vertical) + Math.abs(horizontal)
     }
 
     estimatedTime(peak) {
