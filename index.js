@@ -19,8 +19,8 @@ class Route {
   }
 
     blocksTravelled() {
-            console.log(eastWest.indexOf(this.beginningLocation['horizontal']) - 1)
-            console.log(eastWest.indexOf(this.endingLocation['horizontal']))
+            console.log(eastWest.indexOf(this.beginningLocation['horizontal']) - eastWest.indexOf(this.endingLocation['horizontal']))
+            console.log()
       return this.endingLocation["vertical"] - this.beginningLocation['vertical']
 
 
