@@ -4,6 +4,6 @@ class Driver {
     this.start = start
   }
   startDate() {
-    return new Date(this.start)
+    return (new Date(this.start))
   }
 }
