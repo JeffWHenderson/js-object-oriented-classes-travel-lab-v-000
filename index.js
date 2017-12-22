@@ -20,6 +20,6 @@ class Route {
 
     blocksTravelled() {
       this.beginningLocation['horizontal']
-      console.log(this.beginningLocation['vertical'])// - this.ending['vertical']
+      console.log(this.beginningLocation['horizontal'])// - this.ending['vertical']
     }
 }
